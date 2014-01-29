@@ -117,6 +117,7 @@ a {
   background: #FF64D2;
   opacity: 0.6;
   transition: 0.5s ease all;
+  -webkit-transition: 0.5s ease all;
 
   border-radius: 22px;
   width: 33px;
@@ -126,7 +127,10 @@ a {
 }
 
 .hint:hover {
-  -webkit-transform: scale(1.1);
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
 }
 
 .close {
@@ -170,6 +174,7 @@ a {
   background-color: rgba(100, 100, 120, 0.6);
   border-radius: 20px;
   transition: 0.5s ease all;
+  -webkit-transition: 0.5s ease all;
 }
 
 .col-3-left:hover {
