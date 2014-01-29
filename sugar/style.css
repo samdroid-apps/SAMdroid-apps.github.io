@@ -1,0 +1,186 @@
+body {
+  font-family: sans, sans-serif;
+  margin: 8px 0;
+}
+
+#section-main {
+  max-width: 900px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  text-align: center;
+  color: #202020;
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: 100;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Header Styles */
+
+#section-header {
+  padding: 5px;
+  overflow: none;
+  height: 98px;
+}
+
+.logo {
+  vertical-align: bottom;
+  float: left;
+  display: inline-block;
+  padding-right: 2%;
+}
+
+.header-list {
+  list-style: none;
+  vertical-align: baseline;
+}
+
+.header-link {
+  color: black;
+  text-decoration: underline;
+  transition: 0.5s ease all;
+  display: inline-block;
+  float: right;
+  padding-right: 2%;
+  vertical-align: baseline;
+}
+
+.header-link:hover {
+  -webkit-transform: scale(1.1);
+}
+
+.last {
+  padding-right: 0;
+  margin-right: 0;
+}
+
+/* Info Section Styles */
+
+#section-info {
+  padding: 2px 0;
+  margin-bottom: 3px;
+  background: url(img/info-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  color: #202020;
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+}
+
+/* Interactive Section Styles */
+
+.interactive-container {
+  margin: 0 auto;
+  position: relative;
+  width: 800px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.img-start {
+  transition: 2s ease all;
+}
+
+.demo {
+  display: none;
+}
+
+.info {
+  display: none;
+  background: white;
+  border-radius: 2px;
+  border: 1px solid black;
+  padding: 2px;
+}
+
+#maze-info {
+  position: absolute;
+  left: 100px;
+  top: 300px;
+}
+
+.hint {
+  background-image: url(img/click-hint.png);
+  opacity: 0.5;
+  -webkit-transform: scale(0.75);
+  transition: 0.5s ease all;
+
+  width: 64px;
+  height: 64px;
+}
+
+.hint:hover {
+  -webkit-transform: scale(1);
+}
+
+#maze-hint {
+  position: absolute;
+  left: 450px;
+  top: 480px;
+}
+
+/* Join and Get Section */
+
+#section-join-get {
+  background-image: url(img/join-get-bg.jpg);
+  background-repeat: repeat;
+  overflow: none;
+  padding: 5px;
+}
+
+#section-join-get h2 {
+  color: white;
+}
+
+.col-3 {
+  display: inline-block;
+  float: left;
+  width: 30%;
+  padding: 0.5%;
+  margin-right: 3.5%;
+  
+  text-align: center;
+  background-color: rgba(100, 100, 120, 0.6);
+  border-radius: 20px;
+  transition: 0.5s ease all;
+}
+
+.col-3-left:hover {
+  transform: scale(0.9) skew(5deg, 5deg);
+  -webkit-transform: scale(0.9) skew(5deg, 5deg);
+  -moz-transform: scale(0.9) skew(5deg, 5deg);
+  -ms-transform: scale(0.9) skew(5deg, 5deg);
+}
+
+.col-3-mid:hover {
+  transform: scale(0.9) skew(1deg, 2deg);
+  -webkit-transform: scale(0.9) skew(10deg, 2deg);
+  -moz-transform: scale(0.9) skew(10deg, 2deg);
+  -ms-transform: scale(0.9) skew(10deg, 2deg);
+}
+
+.col-3-right:hover {
+  margin-right: 0;
+  transform: scale(0.9) skew(-5deg, 5deg);
+  -webkit-transform: scale(0.9) skew(-5deg, 5deg);
+  -moz-transform: scale(0.9) skew(-5deg, 5deg);
+  -ms-transform: scale(0.9) skew(-5deg, 5deg);
+}
+
+.col-container {
+  overflow: hidden;
+}
