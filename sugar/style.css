@@ -114,23 +114,36 @@ a {
 }
 
 .hint {
-  background-image: url(img/click-hint.png);
-  opacity: 0.5;
-  -webkit-transform: scale(0.75);
+  background: #FF64D2;
+  opacity: 0.6;
   transition: 0.5s ease all;
 
-  width: 64px;
-  height: 64px;
+  border-radius: 22px;
+  width: 33px;
+  height: 33px;
+  
+  box-shadow: 0 0 10px #6E008C;
 }
 
 .hint:hover {
-  -webkit-transform: scale(1);
+  -webkit-transform: scale(1.1);
+}
+
+.close {
+  background-color: grey;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
 }
 
 #maze-hint {
   position: absolute;
-  left: 450px;
-  top: 480px;
+  left: 460px;
+  top: 490px;
 }
 
 /* Join and Get Section */
