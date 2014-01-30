@@ -97,23 +97,23 @@ a {
 
 .demo {
   display: none;
+  position: absolute;
+  top: -5px;
 }
 
 .info {
+  position: absolute;
   display: none;
+  
   background: white;
   border-radius: 2px;
   border: 1px solid black;
   padding: 2px;
-}
-
-#maze-info {
-  position: absolute;
-  left: 100px;
-  top: 300px;
+  max-width: 250px;
 }
 
 .hint {
+  position: absolute;
   background: #FF64D2;
   opacity: 0.6;
   transition: 0.5s ease all;
@@ -142,12 +142,37 @@ a {
   width: 20px;
   height: 20px;
   border-radius: 20px;
+  transition: 0.5s ease all;
+  -webkit-transition: 0.5s ease all;
 }
 
-#maze-hint {
-  position: absolute;
-  left: 460px;
-  top: 490px;
+.close:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+}
+
+/* Interactive Content */
+
+#turtle-info {
+  left: 50px;
+  top: 100px;
+}
+
+#turtle-hint {
+  left: 222px;
+  top: 402px;
+}
+
+#pippy-info {
+  left: 450px;
+  top: 70px;
+}
+
+#pippy-hint {
+  left: 555px;
+  top: 402px;
 }
 
 /* Join and Get Section */
@@ -161,6 +186,7 @@ a {
 
 #section-join-get h2 {
   color: white;
+  text-shadow: 1px 1px 3px white;
 }
 
 .col-3 {
@@ -171,7 +197,7 @@ a {
   margin-right: 3.5%;
   
   text-align: center;
-  background-color: rgba(100, 100, 120, 0.6);
+  background-color: rgba(180, 180, 200, 0.6);
   border-radius: 20px;
   transition: 0.5s ease all;
   -webkit-transition: 0.5s ease all;
@@ -201,4 +227,15 @@ a {
 
 .col-container {
   overflow: hidden;
+}
+
+@media screen and (max-width: 500px) {
+  .col-3 {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 3%;
+    min-width: 100%;
+    width: auto;
+    clear: both;
+  }
 }
