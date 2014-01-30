@@ -56,3 +56,23 @@ function play_video(selector, time) {
   setTimeout(pause_and_show, time);
   hide_hints()
 };
+
+var hints, current;
+hints = ['pippy', 'turtle'];
+current = 0;
+
+function pulse() {
+  var ele;
+  ele = $('#' + hints[current] + '-hint');
+  ele.removeClass('pulsed');
+
+  current++;
+  if (current == hints.length) {
+    current = 0;
+  }
+
+  ele = $('#' + hints[current] + '-hint');
+  ele.addClass('pulsed');
+};
+
+setInterval(pulse, 2000);

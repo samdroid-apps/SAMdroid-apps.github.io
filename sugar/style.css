@@ -116,8 +116,8 @@ a {
   position: absolute;
   background: #FF64D2;
   opacity: 0.6;
-  transition: 0.5s ease all;
-  -webkit-transition: 0.5s ease all;
+  transition: 1s ease all;
+  -webkit-transition: 1s ease all;
 
   border-radius: 22px;
   width: 33px;
@@ -126,6 +126,15 @@ a {
   box-shadow: 0 0 10px #6E008C;
 }
 
+.pulsed {
+  box-shadow: 2px 2px 20px #6E008C;
+  
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+}
+  
 .hint:hover {
   transform: scale(1.5);
   -webkit-transform: scale(1.5);
