@@ -14,7 +14,7 @@ function show_hints() {
 
 function continue_home() {
   var vid, info;
-  vid = document.getElementById(sel + '-video');
+  vid = document.getElementById('video');
   vid.play();
   vid.addEventListener('ended', function(event) {
     var vidj, img;
@@ -22,7 +22,7 @@ function continue_home() {
     img = $('.img-start');
     img.show();
     
-    vidj = $('#' + sel + '-video');
+    vidj = $('#video');
     vidj.hide()
     
     show_hints()
@@ -34,7 +34,7 @@ function continue_home() {
 
 function pause_and_show() {
   var vid, info;
-  vid = document.getElementById(sel + '-video');
+  vid = document.getElementById('video');
   vid.pause();
   
   info = $('#' + sel + '-info')
@@ -48,9 +48,10 @@ function play_video(selector, time) {
   img = $('.img-start');
   img.hide();
   
-  vidj = $('#' + sel + '-video');
+  vidj = $('#video');
   vidj.show();
-  vid = document.getElementById(sel + '-video' );
+  vidj.attr('src', 'vid/' + sel + '.ogv')
+  vid = document.getElementById('video');
   vid.play();
   
   setTimeout(pause_and_show, time);
