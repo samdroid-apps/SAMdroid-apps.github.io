@@ -58,7 +58,7 @@ function play_video(selector, time) {
 };
 
 var hints, current;
-hints = ['pippy', 'turtle'];
+hints = ['pippy', 'turtle', 'journal'];
 current = 0;
 
 function pulse() {

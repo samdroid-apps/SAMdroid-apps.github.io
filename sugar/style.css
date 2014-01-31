@@ -132,6 +132,7 @@ a {
 
 .pulsed {
   box-shadow: 2px 2px 20px #6E008C;
+  opacity: 0.8;
   
   transform: scale(1.2);
   -webkit-transform: scale(1.2);
@@ -186,6 +187,16 @@ a {
 #pippy-hint {
   left: 555px;
   top: 402px;
+}
+
+#journal-info {
+  left: 325px;
+  top: 150px;
+}
+
+#journal-hint {
+  left: 383px;
+  top: 355px;
 }
 
 /* Join and Get Section */
