@@ -25,12 +25,12 @@ img {
   background-image: url(http://subtlepatterns.com/patterns/stardust.png);
   background-position: 0 0;
   background-repeat: repeat;
-
+  
   -webkit-animation: moveStars 60s infinite;
           animation: moveStars 60s infinite;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-
+  
   text-align: center;
   overflow: hidden;
   padding: 8px;
@@ -48,7 +48,8 @@ img {
 /* Multi colored link section */
 .alt-link {
   display: block;
-  width: 33%;
+  width: calc(100% / 3);
+  width: 33.3333%;
   height: 70px;
   float: left;
 
@@ -82,10 +83,10 @@ a:nth-child(6) .alt-link { background-color: #b10dc9; }
 
 /* Main Activities */
 .container-main-activities-bg {
-  background-image: url(http://subtlepatterns.com/patterns/textured_paper.png);
+  background: url(http://subtlepatterns.com/patterns/textured_paper.png);
 }
 .container-main-activities {
-  padding: 10px;
+  padding: 10px 0;
 }
 .main-icon {
   z-index: 2;
@@ -131,7 +132,7 @@ a:nth-child(6) .alt-link { background-color: #b10dc9; }
   width: 55px;
   height: 55px;
   background-image: url(res/go.svg);
-
+  
   opacity: 0;
   float: right;
   margin-right: 55px;
@@ -179,9 +180,9 @@ li a:hover {
 .container-footer .right {
   height: 60px;
   width: auto;
-
+  
   margin-top: -20px;
-
+  
   float: right;
 }
 
@@ -199,3 +200,4 @@ github {
 gslo {
   background-image: url(https://git.sugarlabs.org/favicon.ico);
 }
+
