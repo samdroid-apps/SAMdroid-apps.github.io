@@ -86,7 +86,7 @@ a:nth-child(6) .alt-link { background-color: #b10dc9; }
   background: url(http://subtlepatterns.com/patterns/textured_paper.png);
 }
 .container-main-activities {
-  padding: 10px 0;
+  padding: 10px;
 }
 .main-icon {
   z-index: 2;
